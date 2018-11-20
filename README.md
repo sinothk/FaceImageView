@@ -21,4 +21,4 @@ SmartImage
     Bitmap bitmap = FaceImageUtil.cropToBitmap(this, myImageView, 400, 100);
     myImageView.setImageBitmap(bitmap);
     
-    
+  ()[https://github.com/sinothk/SmartImage/blob/master/app/imgs/20181120112040.png]
