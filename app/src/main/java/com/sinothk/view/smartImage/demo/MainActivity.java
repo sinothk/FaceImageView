@@ -28,9 +28,7 @@ public class MainActivity extends AppCompatActivity {
         mImgD_D_s = (ImageView) findViewById(R.id.img_d_d_s);
 
         mBaseView.setImageResource(R.mipmap.imgs);
-
         Bitmap baseBitmap = ((BitmapDrawable) mBaseView.getDrawable()).getBitmap();
-
         Bitmap clipBitmap = FaceImageUtil.cropToBitmap(this, baseBitmap, 320, 320);
         mImgA_A.setImageBitmap(clipBitmap);
 
