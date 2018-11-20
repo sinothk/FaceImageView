@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     private ImageView mImgC_B;
     private ImageView mImgD_D_s;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
