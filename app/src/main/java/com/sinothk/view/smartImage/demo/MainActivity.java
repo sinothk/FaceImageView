@@ -2,11 +2,11 @@ package com.sinothk.view.smartImage.demo;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import com.cfox.ivcliplib.CImageUtils;
+import com.sinothk.smartImage.FaceImageUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,18 +30,23 @@ public class MainActivity extends AppCompatActivity {
 
         mBaseView.setImageResource(R.mipmap.imgs);
 
-        Bitmap baseBitmap = ((BitmapDrawable)mBaseView.getDrawable()).getBitmap();
+        Bitmap baseBitmap = ((BitmapDrawable) mBaseView.getDrawable()).getBitmap();
 
-        Bitmap clipBitmap = CImageUtils.instance(this).cropToBitmap(baseBitmap,320,320);
+        Bitmap clipBitmap = FaceImageUtil.cropToBitmap(this, baseBitmap, 320, 320);
         mImgA_A.setImageBitmap(clipBitmap);
 
-        clipBitmap = CImageUtils.instance(this).cropToBitmap(baseBitmap,320,440);
+        clipBitmap = FaceImageUtil.cropToBitmap(this, baseBitmap, 320, 440);
         mImgB_C.setImageBitmap(clipBitmap);
 
-        clipBitmap = CImageUtils.instance(this).cropToBitmap(baseBitmap,440,320);
+        clipBitmap = FaceImageUtil.cropToBitmap(this, baseBitmap, 440, 320);
         mImgC_B.setImageBitmap(clipBitmap);
 
-        clipBitmap = CImageUtils.instance(this).cropToBitmap(mBaseView,400,400);
+        clipBitmap = FaceImageUtil.cropToBitmap(this, mBaseView, 400, 400);
         mImgD_D_s.setImageBitmap(clipBitmap);
+
+
+        ImageView myImageView = (ImageView) findViewById(R.id.myImageView);
+        Bitmap bitmap = FaceImageUtil.cropToBitmap(this, myImageView, 400, 100);
+        myImageView.setImageBitmap(bitmap);
     }
 }
