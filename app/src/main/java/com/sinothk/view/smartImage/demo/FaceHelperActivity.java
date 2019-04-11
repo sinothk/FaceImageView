@@ -33,7 +33,7 @@ public class FaceHelperActivity extends AppCompatActivity {
 
 
         Picasso.with(this)
-                .load("http://f.hiphotos.baidu.com/image/pic/item/203fb80e7bec54e74b4cd8a4b5389b504ec26aec.jpg")
+                .load("http://d.hiphotos.baidu.com/image/pic/item/3801213fb80e7bec17aa18cd212eb9389b506bad.jpg")
                 .fit() // use fit() and centerInside() for making it memory efficient.
                 .centerInside()
                 .transform(new FaceCenterCrop(500, 500)) //in pixels. You can also use FaceCenterCrop(width, height, unit) to provide width, height in DP.
