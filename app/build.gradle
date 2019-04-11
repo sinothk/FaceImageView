@@ -28,7 +28,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-//    implementation project(':SmartImage')
+    implementation project(':SmartImage')
 
-    implementation 'com.github.sinothk:SmartImage:1.0.1120'
+//    implementation 'com.github.aryarohit07:glide-facedetection-transformation:0.3.0'
+
+//    implementation 'com.github.sinothk:SmartImage:1.0.1120'
 }

@@ -113,9 +113,7 @@
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/img" />
+            android:layout_marginBottom="20dp"/>
     </LinearLayout>
 
 

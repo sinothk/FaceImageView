@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import com.sinothk.smartImage.FaceImageUtil;
 
-public class MainActivity extends AppCompatActivity {
+public class SmartImageDemoMainActivity extends AppCompatActivity {
 
     private ImageView mBaseView;
     private ImageView mImgA_A;
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.smart_image_demo_activity_main);
 
         mBaseView = (ImageView) findViewById(R.id.img_base1);
         mImgA_A = (ImageView) findViewById(R.id.img_a_a);
