@@ -27,7 +27,5 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
-        android:scaleType="centerCrop"
-        android:visibility="gone"
-        android:src="@drawable/original_image4" />
+        android:scaleType="fitXY" />
 </LinearLayout>
