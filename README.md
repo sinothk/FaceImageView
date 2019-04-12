@@ -15,7 +15,7 @@ SmartImage
   ## Step 2. Add the dependency
 
     dependencies {
-            implementation 'com.github.sinothk:FaceImageView:Tag'
+            implementation 'com.github.sinothk:FaceImageView:2.0.0416'
     }
 
 # 使用
